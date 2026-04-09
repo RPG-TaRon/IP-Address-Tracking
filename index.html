@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IP Address Tracker</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>IP Address Tracker</h1>
+
+    <form class="search-form">
+      <label for="ip-input" class="search-label">Search for any IP address or domain</label>
+      <input
+        type="text"
+        id="ip-input"
+        name="ip-input"
+        placeholder="Search for any IP address or domain"
+      >
+      <button type="submit" aria-label="Search">
+        >
+      </button>
+    </form>
+  </header>
+
+  <main>
+    <section class="info-card">
+      <div class="info-box">
+        <h2>IP Address</h2>
+        <p id="ip-address">192.212.174.101</p>
+      </div>
+
+      <div class="info-box">
+        <h2>Location</h2>
+        <p id="location">Brooklyn, NY 10001</p>
+      </div>
+
+      <div class="info-box">
+        <h2>Timezone</h2>
+        <p id="timezone">UTC -05:00</p>
+      </div>
+
+      <div class="info-box">
+        <h2>ISP</h2>
+        <p id="isp">SpaceX Starlink</p>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div id="map"></div>
+    </section>
+  </main>
+</body>
+</html>

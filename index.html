@@ -1,54 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
 </head>
+
 <body>
   <header class="hero">
-    <h1>IP Address Tracker</h1>
+    <h1 class="page-title">IP Address Tracker</h1>
 
     <form class="search-form">
       <label for="ip-input" class="search-label">Search for any IP address or domain</label>
-      <input
-        type="text"
-        id="ip-input"
-        name="ip-input"
-        placeholder="Search for any IP address or domain"
-      >
-      <button type="submit" aria-label="Search">
-        >
+
+      <input type="text" id="ip-input" name="ip-input" class="search-input"
+        placeholder="Search for any IP address or domain" />
+
+      <button type="submit" class="search-button" aria-label="Search">
+        
       </button>
     </form>
   </header>
 
-  <main>
+  <main class="main-content">
     <section class="info-card">
-      <div class="info-box">
-        <h2>IP Address</h2>
-        <p id="ip-address">192.212.174.101</p>
+      <div class="info-box info-box-border">
+        <h2 class="info-heading">IP Address</h2>
+        <p class="info-value" id="ip-address">192.212.174.101</p>
       </div>
 
-      <div class="info-box">
-        <h2>Location</h2>
-        <p id="location">Brooklyn, NY 10001</p>
+      <div class="info-box info-box-border">
+        <h2 class="info-heading">Location</h2>
+        <p class="info-value" id="location">Brooklyn, NY 10001</p>
       </div>
 
-      <div class="info-box">
-        <h2>Timezone</h2>
-        <p id="timezone">UTC -05:00</p>
+      <div class="info-box info-box-border">
+        <h2 class="info-heading">Timezone</h2>
+        <p class="info-value" id="timezone">UTC -05:00</p>
       </div>
 
-      <div class="info-box">
-        <h2>ISP</h2>
-        <p id="isp">SpaceX Starlink</p>
+      <div class="info-box info-box-no-margin">
+        <h2 class="info-heading">ISP</h2>
+        <p class="info-value" id="isp">SpaceX Starlink</p>
       </div>
     </section>
 
@@ -57,4 +57,5 @@
     </section>
   </main>
 </body>
+
 </html>

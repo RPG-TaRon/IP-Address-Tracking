@@ -151,12 +151,6 @@ input {
   color: var(--very-dark-gray);
 }
 
-#map {
-  height: 100%;
-  width: 100%;
-  background-color: hsl(0, 0%, 90%);
-}
-
 @media (min-width: 768px) {
   .hero {
     background-image: url("./images/pattern-bg-desktop.png");
@@ -205,6 +199,15 @@ input {
   .info-value {
     font-size: 26px;
   }
+}
+.map-section {
+  height: 500px;
+}
+
+#map {
+  width: 100%;
+  z-index: 1;
+  height: 600px;
 }
 
 @media (max-width: 767px) {

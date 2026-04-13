@@ -8,16 +8,16 @@ const ispText = document.querySelector("#isp");
 let map; // creating my map variables. which will hold the leaflet map and marker.
 let marker;
 
-// Below is the map setup from the official Leaflet.js quick start guide since it already shows a simple way to create a map and add a marker. This gave me a solid starting point instead of trying to figure everything out from scratch. After that I trimmed it down and adjusted it to my needs. I didn't need the circle, polygons, or popups.
+// Below is the map setup from the official Leaflet.js quick start guide. It shows a simple way to create a map and add a marker. This gave me a solid starting point instead of having the same code as others. After that I trimmed it down and adjusted it to my needs. I didn't need the circle, polygons, or popups.
 
-function initializeMap(lat, lng) {
+function initializeMap(lat, lng) { //wrapping the map and added logic to prevent the map from recreating.
   map = L.map("map").setView([lat, lng], 13);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "&copy; OpenStreetMap contributors",
   }).addTo(map);
 
-  marker = L.marker([lat, lng]).addTo(map);
+  marker = L.marker([lat, lng]).addTo(map); // adding the marker
 }
 
 // The function below updates the map and marker position.
@@ -28,7 +28,7 @@ function updateMap(lat, lng) {
   }
 
   map.setView([lat, lng], 13);     //Sets the map view to the new coordinates
-  marker.setLatLng([lat, lng]);     //Sets the marker to the new coordinates
+  marker.setLatLng([lat, lng]);    //Sets the marker to the new coordinates
 }
 // The function below takes the API response and pushes that data into the page. It updates the text fields first, then updates the map so the visual location matches the information shown.
 function updateUi(data) {
